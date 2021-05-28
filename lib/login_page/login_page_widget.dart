@@ -33,14 +33,14 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
-            color: Color(0xFF110631),
+            color: Colors.white,
           ),
           child: Stack(
             children: [
               Align(
                 alignment: Alignment(0.06, -0.63),
                 child: Image.network(
-                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/flutterflow_assets/ff_full_logo_light.png',
+                  'https://lh3.googleusercontent.com/proxy/vTgYKPvFHkEro3ZREIt_emkQQCsLphiQeDAQ51ttF5af4xuka3L3Y6EmtCJCuEDbkk6w-3gqiyQ9aV24PAhZjubcgXMhCWk',
                   width: 280,
                   height: 100,
                   fit: BoxFit.contain,
@@ -70,7 +70,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     hintText: 'Username',
                                     hintStyle: GoogleFonts.getFont(
                                       'Lato',
-                                      color: Colors.white,
+                                      color: Color(0xFF05010F),
                                       fontSize: 18,
                                     ),
                                     enabledBorder: UnderlineInputBorder(
@@ -96,7 +96,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                   style: GoogleFonts.getFont(
                                     'Lato',
-                                    color: Colors.white,
+                                    color: Color(0xFF05010F),
                                     fontSize: 18,
                                   ),
                                 ),
@@ -105,7 +105,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 alignment: Alignment(0.95, 0.5),
                                 child: Icon(
                                   Icons.person,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   size: 24,
                                 ),
                               )
@@ -129,7 +129,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     hintText: 'Password',
                                     hintStyle: GoogleFonts.getFont(
                                       'Lato',
-                                      color: Colors.white,
+                                      color: Colors.black,
                                       fontSize: 18,
                                     ),
                                     enabledBorder: UnderlineInputBorder(
@@ -155,7 +155,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                   style: GoogleFonts.getFont(
                                     'Lato',
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -164,7 +164,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 alignment: Alignment(0.95, 0.5),
                                 child: Icon(
                                   Icons.lock_open,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   size: 24,
                                 ),
                               )
@@ -205,12 +205,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 color: Color(0x00FFFFFF),
                                 textStyle: GoogleFonts.getFont(
                                   'Lato',
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15,
                                 ),
                                 borderSide: BorderSide(
-                                  color: Color(0xFF553BBA),
+                                  color: Color(0xFFEBE20E),
                                   width: 2,
                                 ),
                                 borderRadius: 0,
@@ -245,12 +245,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   color: Color(0x00FFFFFF),
                                   textStyle: GoogleFonts.getFont(
                                     'Lato',
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 15,
                                   ),
                                   borderSide: BorderSide(
-                                    color: Color(0xFF553BBA),
+                                    color: Colors.black,
                                     width: 2,
                                   ),
                                   borderRadius: 0,
