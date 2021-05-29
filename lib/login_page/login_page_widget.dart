@@ -2,6 +2,7 @@ import '../auth/auth_util.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../main.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -38,11 +39,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: Alignment(0.06, -0.63),
-                child: Image.network(
-                  'https://lh3.googleusercontent.com/proxy/vTgYKPvFHkEro3ZREIt_emkQQCsLphiQeDAQ51ttF5af4xuka3L3Y6EmtCJCuEDbkk6w-3gqiyQ9aV24PAhZjubcgXMhCWk',
-                  width: 280,
-                  height: 100,
+                alignment: Alignment(0, -0.9),
+                child: CachedNetworkImage(
+                  imageUrl: 'https://robohash.org/15',
+                  width: double.infinity,
+                  height: MediaQuery.of(context).size.height * 0.4,
                   fit: BoxFit.contain,
                 ),
               ),
