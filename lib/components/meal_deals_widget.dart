@@ -14,17 +14,18 @@ class _MealDealsWidgetState extends State<MealDealsWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 200,
-      decoration: BoxDecoration(),
+      height: double.infinity,
+      decoration: BoxDecoration(
+        color: Colors.white,
+      ),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsets.fromLTRB(16, 0, 16, 12),
+            padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'Meal Deals',
@@ -51,175 +52,204 @@ class _MealDealsWidgetState extends State<MealDealsWidget> {
               scrollDirection: Axis.horizontal,
               children: [
                 Padding(
-                  padding: EdgeInsets.fromLTRB(16, 0, 8, 0),
-                  child: Container(
-                    width: 150,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 18),
+                  child: Card(
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                    color: Color(0xFFF5F5F5),
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
-                      shape: BoxShape.rectangle,
-                      border: Border.all(
-                        color: Color(0xFF9E9E9E),
-                        width: 2,
-                      ),
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Image.network(
-                          'https://static.wixstatic.com/media/633736_51ef038be73e4c989dc0c8d11edf6f88~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/crispy%20fries.png',
-                          width: double.infinity,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          'Crispy Fries',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
+                    child: Container(
+                      width: 140,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Color(0xFFEEEEEE),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Image.network(
+                              'https://static.wixstatic.com/media/633736_7cb3dc22a5dc475ca4c3c7b5cd605a91~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/ensalada%20de%20coditos.png',
+                              width: double.infinity,
+                              height: double.infinity,
+                              fit: BoxFit.fitWidth,
+                            ),
                           ),
-                        ),
-                        Text(
-                          '\$1.49',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            color: Color(0xFF757575),
-                            fontSize: 12,
+                          Text(
+                            'Pasta Salad',
+                            style: FlutterFlowTheme.bodyText1.override(
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        )
-                      ],
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child: Text(
+                              '\$1.49',
+                              style: FlutterFlowTheme.bodyText1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF757575),
+                                fontSize: 12,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
-                  child: Container(
-                    width: 150,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 18),
+                  child: Card(
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                    color: Color(0xFFF5F5F5),
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
-                      shape: BoxShape.rectangle,
-                      border: Border.all(
-                        color: Color(0xFF9E9E9E),
-                        width: 2,
-                      ),
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Image.network(
-                          'https://static.wixstatic.com/media/633736_7cb3dc22a5dc475ca4c3c7b5cd605a91~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/ensalada%20de%20coditos.png',
-                          width: double.infinity,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          'Pasta Salad',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
+                    child: Container(
+                      width: 140,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Color(0xFFEEEEEE),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Image.network(
+                              'https://static.wixstatic.com/media/633736_c23a68e1acb94fed8b519f05979f4b64~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/2%20biscuits.png',
+                              width: double.infinity,
+                              height: double.infinity,
+                              fit: BoxFit.fitWidth,
+                            ),
                           ),
-                        ),
-                        Text(
-                          '\$1.49',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            color: Color(0xFF757575),
-                            fontSize: 12,
+                          Text(
+                            'Honey-Butter Biscuits',
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.bodyText1.override(
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        )
-                      ],
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child: Text(
+                              '\$1.49',
+                              style: FlutterFlowTheme.bodyText1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF757575),
+                                fontSize: 12,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
-                  child: Container(
-                    width: 150,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(8, 0, 0, 18),
+                  child: Card(
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                    color: Color(0xFFF5F5F5),
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
-                      shape: BoxShape.rectangle,
-                      border: Border.all(
-                        color: Color(0xFF9E9E9E),
-                        width: 2,
-                      ),
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Image.network(
-                          'https://static.wixstatic.com/media/633736_c23a68e1acb94fed8b519f05979f4b64~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/2%20biscuits.png',
-                          width: double.infinity,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          'Honey Biscuits',
-                          textAlign: TextAlign.center,
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
+                    child: Container(
+                      width: 140,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Color(0xFFEEEEEE),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Image.network(
+                              'https://static.wixstatic.com/media/633736_612ce48e56354600b5d756a96f6b77a7~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/SIDE%20SALAD.png',
+                              width: double.infinity,
+                              height: double.infinity,
+                              fit: BoxFit.fitWidth,
+                            ),
                           ),
-                        ),
-                        Text(
-                          '\$1.49',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            color: Color(0xFF757575),
-                            fontSize: 12,
+                          Text(
+                            'Garden Salad',
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.bodyText1.override(
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        )
-                      ],
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child: Text(
+                              '\$1.49',
+                              style: FlutterFlowTheme.bodyText1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF757575),
+                                fontSize: 12,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
-                  child: Container(
-                    width: 150,
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(8, 0, 8, 18),
+                  child: Card(
+                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                    color: Color(0xFFF5F5F5),
+                    elevation: 10,
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
-                      shape: BoxShape.rectangle,
-                      border: Border.all(
-                        color: Color(0xFF9E9E9E),
-                        width: 2,
-                      ),
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Image.network(
-                          'https://static.wixstatic.com/media/633736_612ce48e56354600b5d756a96f6b77a7~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/SIDE%20SALAD.png',
-                          width: double.infinity,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          'Garden Salaad',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
+                    child: Container(
+                      width: 140,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Color(0xFFEEEEEE),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Image.network(
+                              'https://static.wixstatic.com/media/633736_51ef038be73e4c989dc0c8d11edf6f88~mv2.png/v1/fill/w_802,h_476,al_c,usm_0.66_1.00_0.01/crispy%20fries.png',
+                              width: double.infinity,
+                              height: double.infinity,
+                              fit: BoxFit.fitWidth,
+                            ),
                           ),
-                        ),
-                        Text(
-                          '\$1.49',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            color: Color(0xFF757575),
-                            fontSize: 12,
+                          Text(
+                            'Crispy Fries',
+                            style: FlutterFlowTheme.bodyText1.override(
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        )
-                      ],
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child: Text(
+                              '\$1.49',
+                              style: FlutterFlowTheme.bodyText1.override(
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF757575),
+                                fontSize: 12,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )

@@ -21,10 +21,10 @@ class _CarouselCardWidgetState extends State<CarouselCardWidget> {
       child: Stack(
         children: [
           Image.network(
-            'https://scontent-dfw5-1.cdninstagram.com/v/t51.2885-15/173908979_292674638897569_184001768240543151_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=x3TtSLmpyxUAX84Z6ZX&_nc_ht=scontent-dfw5-1.cdninstagram.com&oh=0c1e450c8174a95f3a53297da01ec15b&oe=60B3C223',
+            'https://static.wixstatic.com/media/252e34_3503cb92c36145428bdbde6279e15f2d~mv2.png/v1/fill/w_640,h_380,al_c,usm_0.66_1.00_0.01/pechu%20krunchy%20solo.png',
             width: double.infinity,
             height: double.infinity,
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
           ),
           Container(
             width: double.infinity,

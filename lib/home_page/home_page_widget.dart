@@ -105,16 +105,22 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+              padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
               child: CarouselCardWidget(),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
-              child: MostPopularWidget(),
+            Container(
+              height: 210,
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
+                child: MostPopularWidget(),
+              ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
-              child: MealDealsWidget(),
+              padding: EdgeInsets.fromLTRB(0, 1, 0, 0),
+              child: Container(
+                height: 200,
+                child: MealDealsWidget(),
+              ),
             )
           ],
         ),
